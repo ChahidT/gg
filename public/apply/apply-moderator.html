@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moderator Application | Sync</title>
+  <link rel="icon" href="https://i.postimg.cc/2S1mWb5z/Sync-Logo-PNG-1.png" />
+  <style>
+    body { background: #4d60ed; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; }
+    .application-form-wrapper { background: #fff; color: #222; border-radius: 18px; box-shadow: 0 2px 16px #4d60ed22; max-width: 420px; margin: 48px auto; padding: 40px 32px 32px 32px; }
+    h2 { color: #4d60ed; text-align: center; margin-bottom: 24px; }
+    label { display: block; margin-bottom: 8px; font-weight: 500; }
+    input, textarea, select { width: 100%; padding: 10px; margin-bottom: 16px; border-radius: 8px; border: 1px solid #e0e3fa; font-size: 1rem; }
+    button { width: 100%; background: #4d60ed; color: #fff; border: none; border-radius: 8px; padding: 12px; font-weight: 600; cursor: pointer; }
+    button:hover { background: #5865F2; }
+  </style>
+</head>
+<body>
+  <div class="application-form-wrapper">
+    <h2>Moderator Application</h2>
+    <form method="POST" action="/submit-application">
+      <input type="hidden" name="type" value="Moderator" />
+      <label for="discord">Discord ID</label>
+      <input type="text" id="discord" name="discord" required />
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+      <label for="skills">Moderation Skills</label>
+      <input type="text" id="skills" name="skills" placeholder="e.g. Conflict Resolution, Rule Enforcement" required />
+      <label for="handle">How would you handle a user breaking the rules?</label>
+      <textarea id="handle" name="handle" rows="2" placeholder="Describe your approach..." required></textarea>
+      <label for="past">Describe a past experience where you resolved a conflict.</label>
+      <textarea id="past" name="past" rows="2" placeholder="Your story..." required></textarea>
+      <label for="experience">Experience</label>
+      <textarea id="experience" name="experience" rows="3" placeholder="Describe your experience..." required></textarea>
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
