@@ -14,8 +14,7 @@ app.use(session({
 }));
 
 const ADMINS = [
-  { username: 'chahid@synclogics.xyz', password: 'Cht.2042012' },
-  { username: 'gjester@synclogics.xyz', password: 'gjestervex15' },
+  { username: 'hr@synclogics.xyz', password: 'w5uZCq@#H?' },
 ];
 
 app.get('/', (req, res) => {
