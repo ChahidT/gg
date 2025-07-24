@@ -41,7 +41,6 @@ app.get('/apply-marketing', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'apply', 'apply-marketing.html'));
 });
 
-// Bewerking sollicitaties
 app.post('/submit-application', (req, res) => {
     const { type, name, email, skills, handle, past, experience, discord } = req.body;
     const id = Date.now().toString() + Math.floor(Math.random() * 1000);
@@ -193,5 +192,5 @@ app.use((req, res) => {
 });
 
 app.listen(3000, () => {
-    console.log(`✅ Server running on http://localhost:3000`);
+    console.log(`Server running on port 3000`);
 });
