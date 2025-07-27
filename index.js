@@ -82,9 +82,9 @@ app.post('/submit-application', async (req, res) => {
         const embed = {
             title: `${type} Application`,
             fields: [
-                { name: 'Name', value: name, inline: true },
-                { name: 'Email', value: email, inline: true },
-                { name: 'Discord', value: discord, inline: true },
+                { name: 'Name', value: name },
+                { name: 'Email', value: email },
+                { name: 'Discord', value: discord },
                 { name: 'Skills', value: skills || 'None' },
                 { name: 'Handle', value: handle || 'None' },
                 { name: 'Past Projects', value: past || 'None' },
