@@ -84,7 +84,7 @@ app.post('/submit-application', async (req, res) => {
             fields: [
                 { name: 'Name', value: name },
                 { name: 'Email', value: email },
-                { name: 'Discord', value: `<@{discord}>` },
+                { name: 'Discord', value: discord },
                 { name: 'Skills', value: skills || 'None' },
                 { name: 'Handle', value: handle || 'None' },
                 { name: 'Past Projects', value: past || 'None' },
