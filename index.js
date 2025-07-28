@@ -94,7 +94,6 @@ app.post('/submit-application', async (req, res) => {
         };
 
         await axios.post(webhookUrl, {
-            content: '@here',
             embeds: [embed]
         });
 
