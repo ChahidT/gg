@@ -42,6 +42,10 @@ app.get('/apply-marketing', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'apply', 'apply-marketing.html'));
 });
 
+app.get('/apply/admin', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'apply', 'admin-login.html'));
+});
+
 app.post('/submit-application', async (req, res) => {
     const { type, name, email, skills, handle, past, experience, discord } = req.body;
     const id = Date.now().toString() + Math.floor(Math.random() * 1000);
